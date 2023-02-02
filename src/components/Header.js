@@ -30,14 +30,10 @@ function Header() {
               </li>
               <li>
                 <button type="button" className="btn btn-outline-light me-2">
-                  Sách
+                  Danh mục sách
                 </button>
               </li>
-              <li>
-                <button type="button" className="btn btn-outline-light me-2">
-                  Sản phẩm
-                </button>
-              </li>
+
               <li>
                 <button type="button" className="btn btn-outline-light me-2">
                   Liên hệ
@@ -45,25 +41,115 @@ function Header() {
               </li>
               <li>
                 <button type="button" className="btn btn-outline-light me-2">
-                  Giới thiệu
+                  Về chúng tôi
                 </button>
               </li>
             </ul>
-            <form
-              className="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3"
-              role="search"
-            >
-              <input
-                type="search"
-                className="form-control form-control-dark text-bg-dark"
-                placeholder="Search..."
-                aria-label="Search"
-              />
-            </form>
             <div className="text-end">
-              <button type="button" className="btn btn-outline-light me-2">
+              {/* Button đăng nhập */}
+              {/* <button type="button" className="btn btn-outline-light me-2">
+                Đăng nhập
+              </button> */}
+
+              <div
+                className="modal fade"
+                id="exampleModalToggle"
+                aria-hidden="true"
+                aria-labelledby="exampleModalToggleLabel"
+                tabIndex={-1}
+              >
+                <div className="modal-dialog modal-dialog-centered">
+                  <div className="modal-content">
+                    <div className="modal-header">
+                      <h1 className="fw-bold mb-0 fs-2 text-dark">Đăng nhập</h1>
+                      <button
+                        type="button"
+                        className="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      />
+                    </div>
+                    <div className="modal-body">
+                      <form className>
+                        <div className="form-floating mb-3 text-dark">
+                          <input
+                            type="email"
+                            className="form-control rounded-3"
+                            id="floatingInput"
+                            placeholder="name@example.com"
+                          />
+                          <label htmlFor="floatingInput">Địa chỉ email</label>
+                        </div>
+                        <div className="form-floating mb-3 text-dark">
+                          <input
+                            type="password"
+                            className="form-control rounded-3"
+                            id="floatingPassword"
+                            placeholder="Password"
+                          />
+                          <label htmlFor="floatingPassword">Mật khẩu</label>
+                        </div>
+                      </form>
+                    </div>
+                    <div className="modal-footer">
+                      <button
+                        className="btn btn-primary"
+                        data-bs-target="#exampleModalToggle2"
+                        data-bs-toggle="modal"
+                      >
+                        Nếu chưa có tài khoản, đăng ký ngay!
+                      </button>
+                      <button className="btn btn-primary">Đăng nhập</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="modal fade"
+                id="exampleModalToggle2"
+                aria-hidden="true"
+                aria-labelledby="exampleModalToggleLabel2"
+                tabIndex={-1}
+              >
+                <div className="modal-dialog modal-dialog-centered">
+                  <div className="modal-content">
+                    <div className="modal-header">
+                      <h1
+                        className="modal-title fs-5"
+                        id="exampleModalToggleLabel2"
+                      >
+                        Modal 2
+                      </h1>
+                      <button
+                        type="button"
+                        className="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      />
+                    </div>
+                    <div className="modal-body">
+                      Hide this modal and show the first with the button below.
+                    </div>
+                    <div className="modal-footer">
+                      <button
+                        className="btn btn-primary"
+                        data-bs-target="#exampleModalToggle"
+                        data-bs-toggle="modal"
+                      >
+                        Trở lại
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                className="btn btn-outline-light me-2"
+                data-bs-target="#exampleModalToggle"
+                data-bs-toggle="modal"
+              >
                 Đăng nhập
               </button>
+
               <button type="button" className="btn btn-warning">
                 Đăng ký
               </button>
