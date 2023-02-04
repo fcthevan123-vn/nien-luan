@@ -52,7 +52,7 @@ function Header() {
               </button> */}
 
               <div
-                className="modal fade"
+                className="modal fade zindex-modal"
                 id="exampleModalToggle"
                 aria-hidden="true"
                 aria-labelledby="exampleModalToggleLabel"

@@ -1,6 +1,6 @@
 function Features() {
   return (
-    <div className="container px-4 py-5" id="featured-3">
+    <div className="container px-4 py-4" id="featured-3">
       <h2 className="pb-2 border-bottom text-center">
         Mượn sách thật dễ dàng !
       </h2>

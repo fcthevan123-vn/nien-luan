@@ -1,4 +1,4 @@
-function Login({ setIsOpen }) {
+function Login() {
   return (
     <div>
       <div
